@@ -1,0 +1,252 @@
+@media (max-width: 1000px){
+    #top{
+        background-image: none;
+    }
+    .top .logo{
+        color: rgb(65, 0, 170);
+    }
+    .top .nav{
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        top: -60vh;
+        height: 50vh;
+        z-index: 1000;
+        left: 0;
+        width: 100%;
+        transition: all 1s;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(images/keyboard.jpg);
+        box-shadow: 0 5px 13px #777;
+    }
+
+    .top .links{
+        flex-direction: column;
+        /* justify-content: space-around; */
+        place-content: center;
+        align-items:flex-start;
+        height: 50vh;
+        margin-left: 30px;
+    }
+    .top .links li{
+        margin: 10px 0;
+    }
+    .open{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .nav .close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+
+    .social-links{
+        flex-direction: row;
+        height: auto;
+        bottom: 30px;
+        left: 30px;
+    }
+    .social-links img{
+        margin: 0 5px;
+        width: 30px;
+    }
+    .center{
+        color: black;
+    }
+    .bs-name{
+        font-size: 1.6rem;
+        font-weight: bold;
+        -webkit-text-fill-color: rgb(65, 0, 170);
+
+    }
+    .landing-page .desc{
+        color: rgb(0, 0, 48);
+        width: auto;
+        padding: 0 30px;
+    }
+    .landing-page button{
+        background-color: white;
+        box-shadow: 1px 1px 12px rgb(112, 112, 112);
+    }
+    .vals{
+        background-color: #fff;
+        color: black;
+        /* border-top: 3px solid rgb(211, 211, 211); */
+    }
+    .values, .vals{
+        flex-direction: column;  
+        text-align: left;  
+    }
+    .values > div{
+        width: 90%;
+        margin: 10px;
+        padding: 20px;
+        color: black;
+        box-shadow: 1px 1px 10px rgb(226, 226, 226);
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+        border-left: 10px solid purple;
+    }
+    .values .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+        margin-left: auto;
+    }
+
+    .values .title{
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 5px 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: capitalize;
+    }
+    .values .desc{
+        margin-top: 0;
+    }
+    
+    .services-avail .title-main{
+        margin: 0 15px;
+    }
+    .service-list > div{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin: 15px;
+    }
+
+    .developers{
+        height: auto;
+    }
+    .dev-top{
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0px 2px 12px rgb(0, 55, 128);
+    }
+    .dev-top .logo{
+        color: #ddd;
+        font-size: 1rem;
+    }
+    .dev-top .nav, .dev-top .pagination{
+        display: none;
+    }
+    .dev-body{
+        height:auto;
+        flex-direction: column;
+    }
+    .dev-body .left .card,
+    .dev-body .right .card{
+        width: 100%;
+        margin: 10px auto;
+        padding: 0 20px 40px 20px;
+        text-align: center;
+        box-shadow: 1px 2px 10px rgb(224, 224, 224);
+    }
+    .dev-body .card .name{
+        margin-top: -5px;
+        font-size: 1.1rem;
+      
+    }
+
+    .story{
+        height: auto;
+    }
+    .story .title{
+        font-size: 1.1rem;
+        font-weight: bolder;
+        margin: 5px 0;
+    }
+    .story .desc{
+        flex-direction: column;
+        width: 100%;
+    }
+    .story .desc > div{
+        padding: 0 5px 0 0;
+        margin: 10px 0;
+    }
+    .story .play{
+        margin-top: 20px;
+        font-weight: bolder;
+        font-size: 1.1rem;
+    }
+    .business{
+        padding: 60px 15px;
+    }
+    .business > div{
+        width: 100%;
+    }
+    .business .caption{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .business .services{
+        margin-top: 20px;
+        /* justify-content: unset; */
+    }
+    .services > div{
+        width: 40vw;
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 1px 1px 12px rgb(199, 199, 199);
+    }
+    .services .img{
+        width: 40vw;
+        height: 42vw;
+    }
+    .services img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .footer img{
+        width: 35px;
+    }
+    .intouch{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .intouch > div{
+        padding: 0;
+        width: 100%;
+    }
+    .intouch input{
+        margin: 10px 0;
+        font-size: .9rem;
+        caret-color: rgb(255, 255, 255);
+    }
+    .intouch input[type=submit]{
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .nav2{
+        flex-direction: column;
+
+    }
+    .nav2 .logo{
+        display: none;
+    }
+    .nav2 .copyright{
+        margin: auto;
+        font-weight: 300;
+    }
+    .nav2 .links{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+    .nav2 .links a{
+        margin: 10px 15px;
+        color: rgb(199, 199, 199);
+        text-transform: capitalize;
+        font-size: .9rem;
+        font-weight: bolder;
+    }
+}

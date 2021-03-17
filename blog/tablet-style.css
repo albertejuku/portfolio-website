@@ -1,0 +1,22 @@
+@media (min-width: 600px){
+    .list .item{
+        width: 30vw;
+    }
+
+    .services > div{
+        width: 20vw;
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 1px 1px 12px rgb(199, 199, 199);
+    }
+
+    .services .img{
+        width: 20vw;
+        height: 22vw;
+    }
+    .services img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+} 

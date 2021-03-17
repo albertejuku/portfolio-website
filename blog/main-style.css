@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans';
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+#top{
+    background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)) ,url(images/data.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.top{
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    height: 8vh;
+    position: relative;
+}
+.open, .close{
+    display: none;
+    cursor: pointer;
+}
+.open img{
+    width: 25px;
+    margin: 4px;
+}
+.top .logo{
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    color: rgb(201, 201, 201);
+    padding-left: 40px;
+    font-size: 1.4rem;
+}
+.top .nav{
+    margin-left: auto;
+}
+.nav .links{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.nav .links a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 12px;
+    font-size: .88rem;
+}
+.landing-page{
+    display: grid;
+    height: 92vh;
+    place-content: center;
+    text-align: center;
+    position: relative;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 90%;
+    justify-content: center;
+    left: 0;
+}
+.social-links img{
+    width: 35px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+.center{
+    color: rgb(255, 255, 255);
+}
+.bs-name{
+    margin: auto;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(rgb(10, 0, 148), rgb(97, 12, 194));
+    background-position-x: left;
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.landing-page .desc{
+    width: 400px;
+    margin: 15px auto;
+}
+.landing-page button{
+    padding: 10px 40px 7px ;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 1000px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.landing-page button:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+.vals{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 80px;
+}
+.val-title{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+    margin: 20px;
+}
+.values{
+    display: flex;
+    justify-content: center;
+}
+.values > div{
+    background-color: rgb(255, 255, 255);
+    width: 25vw;
+    margin: 10px;
+    padding: 20px;
+    color: black;
+}
+.values img{
+    width: 50px;
+}
+.values .title{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+.values .desc{
+    margin: 20px 0;
+}
+
+
+.services-avail{
+    padding: 20px;
+}
+.services-avail a{
+    color: rgb(0, 0, 0);
+}
+.services-avail .title-main{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+.services-avail .service-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.service-list > div{
+    margin: 0 20px 20px 0;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 1px 1px 12px rgb(221, 221, 221);
+    border-radius: 5px;
+}
+.service-list div .title{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.service-list div .body{
+    color: rgb(8, 37, 44);
+}
+.service-list .web,
+.service-list .pred-analysis{
+    border-top: 10px solid purple;
+}
+.service-list .mobile,
+.service-list .bs-intergration{
+    border-top: 10px solid maroon;
+}
+.service-list .networking{
+    border-top: 10px solid blue;
+}
+
+.why-work{
+    padding: 25px;
+}
+.why-work .title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.why-work .desc{
+    color: rgb(51, 51, 51);
+}
+.why-work .desc a{
+    color: #000;
+    font-weight: bold;
+}
+
+.developers{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.dev-top{
+    display: flex;
+    height: 8vh;
+    background-color: #fff;
+    box-shadow: 1px 2px 12px rgb(228, 228, 228);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.dev-top > div{
+    display: flex;
+    align-items: center;
+}
+.dev-top .logo{
+    font-weight: bold;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: rgb(73, 73, 73);
+    padding-left: 20px;
+    margin-right: 55px;
+}
+.dev-top .nav{
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dev-top li{
+    margin-right: 10px;
+}
+.dev-top .pagination{
+    margin-left: auto;
+    margin-right: 50px;
+}
+.dev-body{
+    display: flex;
+    height: 92vh;
+}
+.dev-body > div{
+    border-right: 1px solid rgb(235, 235, 235);
+    display: flex;
+    /* align-items: center; */
+}
+.dev-body .left .card{
+    margin-left: auto;
+    margin-right: 80px;
+}
+.dev-body .card{
+    width: 50%;
+    margin-left: 80px;
+}
+.dev-body .card > *{
+    margin: 7px 0;
+}
+.dev-body img{
+    width: 70%;
+    filter: grayscale();
+}
+.dev-body .name{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px 0 12px 0;
+}
+.dev-body .name span:last-child{
+    color: green;
+    font-size: .8rem;
+    font-weight: normal;
+}
+.dev-body .time{
+    text-transform: uppercase;
+    font-size: .85rem;
+    color: rgb(194, 194, 194);
+    font-weight: normal;
+    margin: 3px 0 20px 0;
+}
+.dev-body .desc{
+    font-size: .9rem;
+    line-height: 1.2rem;
+    margin-bottom: 30px;
+}
+.dev-body button{
+    padding: 10px 20px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: orangered;
+    border: none;
+    box-shadow: 1px 2px 12px rgb(128, 128, 128);
+}
+.story{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(images/bluekeyboard.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+.story .title{
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.story .desc{
+    display: flex;
+    width: 50vw;
+    color: #ddd;
+    text-align: left;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 17px;
+}
+.story .desc > div{
+    margin: 10px;
+    padding: 15px;
+}
+.story .play{
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 15vh;
+}
+
+.business{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+}
+.business > div{
+    width: 100%;
+    margin: auto;
+}
+.business .caption{
+    color: red;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.business .description{
+    padding: 20px 0;
+}
+.business .services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.services > div{
+    margin: 0 5px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.services > div{
+    width: 20vw;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 1px 1px 12px rgb(199, 199, 199);
+}
+
+.services .img{
+    width: 20vw;
+    height: 22vw;
+}
+.services img{
+    width: 20vw;
+    height: 20vw;
+}
+.services > div .bottom{
+    color: rgb(19, 0, 128);
+    padding: 10px 0;
+}
+.services > div .bottom span{
+    font-size: 1.3rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px 40px 40px;
+    background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.9)) ,url(images/keyboard.jpg);
+    color:rgb(255, 255, 255);
+    background-size: cover;
+    height: 100vh;
+}
+.footer .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: lighter;
+}
+.footer .media{
+    display: flex;
+    margin: 20px 0 0;
+}
+.footer img{
+    width: 40px;
+    margin: 0 10px;
+}
+.intouch{
+    display: flex;
+    padding: 0px;
+    width: 70%;
+    margin: 40px auto;
+}
+.intouch > div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40vw;
+}
+.intouch input{
+    margin: 30px 0;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+    caret-color: red;
+    outline: none;
+}
+.intouch input[type=submit]{
+    background: rgb(255, 38, 0);
+    width: 50%;
+    padding: 12px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    caret-color: purple;
+}
+.footer .nav2{
+    display: flex;
+    margin-top: auto;
+}
+.nav2 .logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.nav2 .copyright{
+    margin-left: 100px;
+}
+.nav2 .links{
+    display: flex;
+    margin-left: auto;
+}
+.nav2 .links a{
+    margin: 0 10px;
+    color: rgb(141, 141, 141);
+}
